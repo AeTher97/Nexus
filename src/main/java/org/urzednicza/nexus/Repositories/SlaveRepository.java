@@ -9,6 +9,7 @@ import java.util.Optional;
 
 public interface SlaveRepository extends JpaRepository<SlaveDatabaseEntity, Long> {
     Optional<SlaveDatabaseEntity> findById(Long id);
+    Optional<SlaveDatabaseEntity> findByAddress(String address);
     List<SlaveDatabaseEntity> findAll();
 
 }

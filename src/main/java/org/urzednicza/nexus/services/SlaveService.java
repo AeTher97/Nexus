@@ -26,6 +26,10 @@ public class SlaveService {
         return slaveRepository.findById(id).orElseThrow(() -> new RuntimeException());
     }
 
+    public SlaveDatabaseEntity getSlave(String address) {
+        return slaveRepository.findByAddress(address).orElse(null);
+    }
+
     public List<SlaveDatabaseEntity> getAll(){
         return slaveRepository.findAll();
 

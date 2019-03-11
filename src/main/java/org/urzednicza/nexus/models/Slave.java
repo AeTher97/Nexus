@@ -14,6 +14,10 @@ public class Slave {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public void setAddress(String address) {
         this.address = address;
     }
